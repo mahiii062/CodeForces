@@ -1,0 +1,19 @@
+Problem link: https://codeforces.com/problemset/problem/546/A
+Solution is here:')
+
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int k, n, w;
+    cin >> k >> n >> w;
+
+    int cost = k * ((w * (w + 1)) / 2);
+
+    int bor = cost - n;
+
+    if (bor > 0)
+        cout << bor << endl;
+    else
+        cout << 0 << endl;
+}
